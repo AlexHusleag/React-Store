@@ -16,9 +16,9 @@ export default class Firebase {
         app.initializeApp(config);
     }
 
-    accessFirebase = () => {
+    accessFirebase = (table) => {
         let db = app.firestore();
-        return db.collection("cars");
+        return db.collection(table);
     }
 }
 
