@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
-import Cars from './components/Cars/Cars';
-import Toys from './components/Toys/Toys';
+import Cars from './containers/Cars/Cars';
+import Toys from './containers/Toys/Toys';
 import './App.css';
-import TVs from './components/TVs/TVs';
+import TVs from './containers/TVs/TVs';
 import { FirebaseContext } from './components/Firebase/'
 
 class App extends Component {
