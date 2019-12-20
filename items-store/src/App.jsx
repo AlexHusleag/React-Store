@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import Layout from './components/Layout/Layout'
 import Cars from './containers/Cars/Cars';
 import Toys from './containers/Toys/Toys';
 import './App.css';
@@ -12,11 +13,12 @@ class App extends Component {
         <FirebaseContext.Consumer>
           {
             firebase => (
-              <div>
-                <Cars firebase={firebase} />
+              <Layout>
+                {/* <Cars firebase={firebase} />
                 <Toys firebase={firebase} />
-                <TVs firebase={firebase} />
-              </div>
+                <TVs firebase={firebase} /> */}
+              </Layout>
+
             )
           }
         </FirebaseContext.Consumer>
