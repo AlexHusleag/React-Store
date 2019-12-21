@@ -1,0 +1,33 @@
+.Nav{
+    display: flex;
+    height: 100px;
+    width: 100%;
+    position: fixed;
+    background-color: #1e2023;
+}
+
+
+.Toolbar{
+    display:-webkit-flex;
+    display: flex;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0 50px 0 0;
+    position: absolute;
+    align-items: center;
+    justify-content: flex-end;
+    list-style-type: none;
+    box-sizing: border-box;
+}
+
+
+.ToolbarRight{
+    margin-left:auto;
+}
+
+.Toolbar li {
+    color: white;
+    padding: 0 20px;
+}
+
