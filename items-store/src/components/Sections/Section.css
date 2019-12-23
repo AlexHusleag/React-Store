@@ -1,0 +1,43 @@
+.Parent{
+    padding-top: 100px;
+    display:flex;
+    height: 100%;
+    width: 100%;
+    background-color: #D3D3D3;
+}
+
+.SectionHalf{
+    display: flex;
+    flex:2;
+    flex-wrap: wrap;
+    border-color: grey;
+    /* height: 200px; */
+    height: auto;
+    width: 50%;
+    background-color: #D3D3D3;
+    border-bottom: 2px solid grey;
+    border-right: 2px solid grey;
+
+    position: static;
+    align-items: center;
+    list-style-type: none;
+    box-sizing: border-box;
+}
+
+.SectionQuarter{
+    display: flex;
+    flex: 1;
+    flex-wrap: wrap;
+    border-color: grey;
+    /* height: 200px; */
+    height: auto;
+    width: 50%;
+    background-color: #D3D3D3;
+    border-bottom: 2px solid grey;
+    border-right: 2px solid grey;
+
+    position: static;
+    align-items: center;
+    list-style-type: none;
+    box-sizing: border-box;
+}
