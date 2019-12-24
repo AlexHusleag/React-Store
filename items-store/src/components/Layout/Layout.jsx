@@ -2,7 +2,7 @@ import React from 'react';
 import Aux from '../../HOC/Auxiliary';
 
 import Toolbar from '../Navigation/Toolbar/Toolbar';
-import Section from '../Sections/Section'
+import Section from '../Section/Section'
 
 const layout = (props) => (
 

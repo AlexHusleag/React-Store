@@ -1,0 +1,57 @@
+.Parent{
+    /* padding-top: 100px; */
+    display:flex;
+
+    flex: 0 0 33.333333%;
+
+    height: 300px;
+    width: 100%;
+    background-color: #1e2023;
+    flex-direction: row;
+
+}
+
+.Parent:first-child{
+    padding-top: 100px;
+}
+
+.SectionHalf{
+    display: flex;
+    flex:2;
+
+    flex-wrap: nowrap;
+
+    border-color: grey;
+    background-color: #1e2023;
+    border-bottom: 1px solid grey;
+    border-right: 1px solid grey;
+
+    position: static;
+    justify-content: center; /* align horizontal */
+    align-items: center; /* align vertical */
+    list-style-type: none;
+    box-sizing: border-box;
+}
+
+.SectionHalf:hover{
+    /* background-color: red; */
+}
+
+.SectionQuarter{
+    display: flex;
+    flex: 1;
+
+    border-color: grey;
+
+    height: auto;
+    width: 50%;
+    background-color: #1e2023;
+    border-bottom: 1px solid grey;
+    border-right: 1px solid grey;
+
+    position: static;
+    justify-content: center; /* align horizontal */
+    align-items: center; /* align vertical */
+    list-style-type: none;
+    box-sizing: border-box;
+}
