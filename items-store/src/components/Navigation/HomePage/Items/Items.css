@@ -7,5 +7,12 @@
     flex-direction: row;
     justify-content: space-around;
 
-    clip-path: polygon(0 0, 100% 0%, 100% 100%, 0% 100%);
+    /* clip-path: polygon(0 0, 100% 0%, 100% 100%, 0% 100%); */
+
+    --items-wrap: wrap;
+    --items-gap: 25px;
+    --items-first-gap: var(--items-gap);
+    
+    flex-wrap: var(--items-wrap);
+    margin-left: calc(var(--items-first-gap) * -1);
 }

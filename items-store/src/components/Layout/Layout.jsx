@@ -11,7 +11,6 @@ const layout = (props) => (
         <Toolbar/>
         <HomePage/>
         
-
     <main>
         {props.children}
     </main>

@@ -46,7 +46,6 @@ export default class Cars extends Component {
         return (
             <div className="car-item">
                 {this.renderCars()}
-
             </div>
         );
     }
