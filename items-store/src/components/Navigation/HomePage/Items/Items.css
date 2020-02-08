@@ -1,0 +1,11 @@
+.Items{
+    display:flex;
+    flex-wrap: wrap;
+
+    /* background-color: red; */
+    
+    flex-direction: row;
+    justify-content: space-around;
+
+    clip-path: polygon(0 0, 100% 0%, 100% 100%, 0% 100%);
+}

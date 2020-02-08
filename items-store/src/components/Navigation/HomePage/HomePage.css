@@ -1,9 +1,7 @@
 * {
     margin: 0;
-    padding: 0;
-    
+    padding: 0;  
 }
-
 
 
 .Wrapper{
@@ -18,7 +16,6 @@
 
      /* clip-path: polygon(0% 100%, 100% 99%, 100% 10%, 0 10%); */
      /* clip-path: polygon(0% 12%, 100% 12%, 100% 83%, 0 100%); */
-
 }
 
 .Content_Wrapper{
@@ -29,31 +26,6 @@
     /* display: flex;
     flex-wrap: nowrap; */
 }
-
-.Content{
-    display:flex;
-    flex-wrap: wrap;
-    /* background-color: red; */
-    flex-direction: row;
-    justify-content: space-around;
-
-    clip-path: polygon(0 0, 100% 0%, 100% 100%, 0% 100%);
-}
-
-.Item{
-    background-color: #f1f1f1;
-
-    flex: 1 1 25%; 
-
-    margin: 20px;
-    padding: 20px;
-    font-size: 30px;
-    text-align: center;
-
-    clip-path: view-box;
-}
-
-
 
 
 .Button_Wrapper{
@@ -66,8 +38,6 @@
 }
 
 .Button{
-
-
     padding-top: 100px;
     background-color: dodgerblue;
     display: flex;
