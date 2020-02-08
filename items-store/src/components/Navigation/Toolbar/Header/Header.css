@@ -2,10 +2,11 @@
     display: flex;
     border-bottom: 2px solid grey;
     background-clip: padding-box;
-    height: 100px;
+    height: 14vh;
     width: 100%;
-    position: fixed;
-    background-color: #1e2023;
+    position: sticky;
+    top: -104px;
+    background-color: #4BAA72;
 }
 
 

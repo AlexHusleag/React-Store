@@ -1,16 +1,17 @@
 import React from 'react';
 import Aux from '../../HOC/Auxiliary';
 
-import Toolbar from '../Navigation/Toolbar/Toolbar';
-import Section from '../Section/Section'
+import Toolbar from '../Navigation/Toolbar/Header/Header';
+
+import HomePage from '../Navigation/HomePage/HomePage'
+
 
 const layout = (props) => (
-
     <Aux>
         <Toolbar/>
-        <Section/>
-        {/* <div>Toolbar, SideDrawer, Backdrop</div> */}
-        {/* <div>Things to put </div> */}
+        <HomePage/>
+        
+
     <main>
         {props.children}
     </main>

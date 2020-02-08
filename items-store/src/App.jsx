@@ -9,7 +9,7 @@ import { FirebaseContext } from './components/Firebase/'
 class App extends Component {
   render() {
     return (
-      <div>
+      <React.Fragment>
         <FirebaseContext.Consumer>
           {
             firebase => (
@@ -22,7 +22,7 @@ class App extends Component {
             )
           }
         </FirebaseContext.Consumer>
-      </div>
+      </React.Fragment>
     )
   }
 }

@@ -1,7 +1,7 @@
 import React from 'react';
 
-import classes from './Toolbar.css';
-import Logo from './Logo/Logo';
+import classes from '../Header/Header.css';
+import Logo from '../Logo/Logo';
 
 const toolbar = (props) => (
         <nav className={classes.Nav}>

@@ -1,0 +1,94 @@
+* {
+    margin: 0;
+    padding: 0;
+    
+}
+
+
+
+.Wrapper{
+    padding-top: 0px;
+    background-color: dodgerblue;
+    height: 100vh;
+    display: flex;
+
+    background-image: linear-gradient(to right bottom,rgba(126, 213, 111, 0.80), rgba(85, 197, 122, 0.80),rgba(40, 180, 133, 0.80)) ,url('../../../assets/online-shop.jpg');
+    background-size: cover;
+    background-position: top;
+
+     /* clip-path: polygon(0% 100%, 100% 99%, 100% 10%, 0 10%); */
+     /* clip-path: polygon(0% 12%, 100% 12%, 100% 83%, 0 100%); */
+
+}
+
+.Content_Wrapper{
+    padding-left: 50px;
+    padding-right: 50px;
+    margin-top: 800px;
+    width: 100%;
+    /* display: flex;
+    flex-wrap: nowrap; */
+}
+
+.Content{
+    display:flex;
+    flex-wrap: wrap;
+    /* background-color: red; */
+    flex-direction: row;
+    justify-content: space-around;
+
+    clip-path: polygon(0 0, 100% 0%, 100% 100%, 0% 100%);
+}
+
+.Item{
+    background-color: #f1f1f1;
+
+    flex: 1 1 25%; 
+
+    margin: 20px;
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+
+    clip-path: view-box;
+}
+
+
+
+
+.Button_Wrapper{
+    margin-top: 150px;
+    position:absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center; /* center align the button because its inline-block and it's treated as text */
+}
+
+.Button{
+
+
+    padding-top: 100px;
+    background-color: dodgerblue;
+    display: flex;
+
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 10px 30px;
+    display:inline-block;
+    background-color: #fff;
+    color: #777;
+    border-radius: 100px;
+
+    transition: all .2s
+}
+
+.Button:hover{
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0,0,0,.4); /* shadow in the x direction, shadow in the y direction, blur*/
+}
+
+.Button:active{
+    transform: translateY(-1px);
+    box-shadow: 0 10px 10px rgba(0,0,0,.2); /* shadow in the x direction, shadow in the y direction, blur*/
+}
