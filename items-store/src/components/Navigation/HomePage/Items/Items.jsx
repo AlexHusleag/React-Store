@@ -13,10 +13,10 @@ export default class Items extends Component {
             <div className={classes.Items}>
                 <Item logo={lizard}
                       backgroundColor="#FEE8FF"
-                    //   buttonText="Available"
+                      productCategory="Toys"
+                      productNameColor="red"
                       />
                 <Item backgroundColor="#444444"
-                    //   buttonText="Limited Edition"
                       />
                 <Item />
                 <Item />

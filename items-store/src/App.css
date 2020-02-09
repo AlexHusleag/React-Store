@@ -5,3 +5,10 @@
 span {
   margin: 5px;
 }
+
+body{
+  -webkit-font-smoothing: antialiased;
+  font-family: "Inter var",Helvetica,system-ui,sans-serif;
+  font-size: 16px;
+  color: #ff467f;
+}
