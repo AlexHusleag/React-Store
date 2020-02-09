@@ -4,7 +4,6 @@ import classes from '../Item/Item.css'
 
 export default class Item extends Component {
 
-
     state ={
         totalAvailable: 20,
         totalSold: 0,
@@ -21,12 +20,12 @@ export default class Item extends Component {
                         </div>
                     </div>
                     <div class={classes.ProductCard_actions}>
-                        <button className={classes.Button}>
-                            <p className={classes.Button_text}>{this.props.buttonText}</p>
+                        <button className={classes.Button, (this.state.soldOut ? classes.Soldout : (this.state.totalAvailable < 20 ? classes.Limited_Edition : classes.Available ))}>
+                            <p className={classes.Button_text}>{(this.state.totalAvailable >= 20 ? "Available" : 
+                                                                (this.state.totalAvailable < 20 && this.state.totalAvailable > 0 ? "Limited Edition": "Soldout")
+                                                                )}</p>
                         </button>
                     </div>
-                    
-                    {/* <p>Mancare</p> */}
                 </a>
             </div>
         );

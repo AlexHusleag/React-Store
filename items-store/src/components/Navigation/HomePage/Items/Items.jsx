@@ -13,9 +13,11 @@ export default class Items extends Component {
             <div className={classes.Items}>
                 <Item logo={lizard}
                       backgroundColor="#FEE8FF"
-                      buttonText="Available"/>
+                    //   buttonText="Available"
+                      />
                 <Item backgroundColor="#444444"
-                      buttonText="Limited Edition"/>
+                    //   buttonText="Limited Edition"
+                      />
                 <Item />
                 <Item />
                 <Item />
