@@ -37,3 +37,7 @@
     box-shadow: 0 10px 20px rgba(0,0,0,.8) !important; /* shadow in the x direction, shadow in the y direction, blur*/
     clip-path: polygon(8% 4%, 90% 6%, 99% 99%, 0 100%) !important;
 }
+
+/* .Items > div:hover a div:nth-child(2) button{
+    background: rgb(8, 4, 4);
+} */

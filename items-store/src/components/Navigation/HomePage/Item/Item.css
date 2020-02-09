@@ -47,6 +47,10 @@ img{
     transform: scale(1.1);
 }
 
+.ProductCard_media:hover button {
+    background: black;
+}
+
 .ProductCard_media_inner{
     z-index: 1;
     position: absolute; /* relative randeaza prost*/
@@ -76,6 +80,10 @@ img{
     justify-content: center;
 }
 
+/* .ProductCard_actions > .Soldout:hover{
+    background-color: red;
+} */
+
 
 .Button{
     text-decoration: none;
@@ -97,26 +105,39 @@ img{
     -webkit-box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.4);
     -moz-box-shadow:    0px 2px 1px rgba(0, 0, 0, 0.4);
     box-shadow:         0px 2px 1px rgba(0, 0, 0, 0.4);
-    pointer-events:none;
-    background: rgb(0,250,20);
+    /* pointer-events:none; */
+    /* background: rgb(0,250,20); */
     /* background: linear-gradient(90deg, rgba(0,250,20,1) 0%, rgba(1,160,26,0.8354692218684349) 38%, rgba(1,160,26,1) 62%) */
+    
 }
 
 .Available{
-    background-image: linear-gradient(90deg, #020024 0%, #090979 35%, #00d4ff 100%);
+    background: linear-gradient(90deg, #020024 0%, #090979 35%, #00d4ff 100%);
+}
+
+.Available:hover{
+    background: blue;
 }
 
 .Limited_Edition{
     background: linear-gradient(90deg, rgba(0,250,20,1) 0%, rgba(1,160,26,0.8354692218684349) 38%, rgba(1,160,26,1) 62%)
 }
 
+.Limited_Edition:hover{
+    background: green;
+}
+
 .Soldout{
     background: grey;
 }
 
+.Soldout:hover{
+    background: black;
+}
+
 
 .Button_text{
-    /* background-color: blue; */ 
+    /* background-color: blue;  */
     font-family: sans-serif;
     text-shadow: 0px -1px 0px rgba(30, 30, 30, 0.6);
     font-size: 24px;    
