@@ -1,13 +1,9 @@
 .Items{
     display:flex;
     flex-wrap: wrap;
-
-    /* background-color: red; */
     
     flex-direction: row;
     justify-content: space-around;
-
-    /* clip-path: polygon(0 0, 100% 0%, 100% 100%, 0% 100%); */
 
     --items-wrap: wrap;
     --items-gap: 25px;
@@ -15,4 +11,29 @@
     
     flex-wrap: var(--items-wrap);
     margin-left: calc(var(--items-first-gap) * -1);
+}
+
+
+.Items > div:nth-child(2n+1) div:first-child{
+    clip-path: polygon(3% 7%, 97% 4%, 100% 97%, 0% 96%) !important;
+}
+
+.Items > div:nth-child(2n) div:first-child{
+    clip-path: polygon(0 0, 100% 6%, 100% 96%, 0 100%) !important;
+}
+
+
+.Items > div:nth-child(2n+1):hover div:first-child{
+    transition-delay: 0.5s ease; /* delays for 1 second */
+    -webkit-transition-delay: 0.5s ease; /* for Safari & Chrome */
+    box-shadow: 0 10px 20px rgba(0,0,0,.8) !important; /* shadow in the x direction, shadow in the y direction, blur*/
+    clip-path: polygon(0 4%, 100% 6%, 97% 100%, 6% 97%) !important;
+}
+
+
+.Items > div:nth-child(2n+2):hover div:first-child {
+    transition-delay: 0.5s ease; /* delays for 1 second */
+    -webkit-transition-delay: 0.5s ease; /* for Safari & Chrome */
+    box-shadow: 0 10px 20px rgba(0,0,0,.8) !important; /* shadow in the x direction, shadow in the y direction, blur*/
+    clip-path: polygon(8% 4%, 90% 6%, 99% 99%, 0 100%) !important;
 }
