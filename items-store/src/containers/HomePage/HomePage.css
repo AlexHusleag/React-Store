@@ -10,7 +10,7 @@
     height: 100vh;
     display: flex;
 
-    background-image: linear-gradient(to right bottom,rgba(126, 213, 111, 0.80), rgba(85, 197, 122, 0.80),rgba(40, 180, 133, 0.80)) ,url('../../../assets/online-shop.jpg');
+    background-image: linear-gradient(to right bottom,rgba(126, 213, 111, 0.80), rgba(85, 197, 122, 0.80),rgba(40, 180, 133, 0.80)) ,url('../../assets/online-shop.jpg');
     background-size: cover;
     background-position: top;
 

@@ -4,25 +4,40 @@ import Cars from './containers/Cars/Cars';
 import Toys from './containers/Toys/Toys';
 import './App.css';
 import TVs from './containers/TVs/TVs';
-import { FirebaseContext } from './components/Firebase/'
+import { FirebaseContext } from './components/Firebase/';
+
+import ShowcaseItem from './containers/HomePage/Item/Showcase-Item/Showcase-Item'
+
+import { Route, BrowserRouter, Switch } from 'react-router-dom'
 
 class App extends Component {
   render() {
     return (
-      <React.Fragment>
-        <FirebaseContext.Consumer>
-          {
-            firebase => (
-              <Layout>
-                {/* <Cars firebase={firebase} />
-                <Toys firebase={firebase} />
-                <TVs firebase={firebase} /> */}
-              </Layout>
+      <BrowserRouter>
+        <React.Fragment>
+          <FirebaseContext.Consumer>
+            {
+              firebase => (
+                <Switch>
 
-            )
-          }
-        </FirebaseContext.Consumer>
-      </React.Fragment>
+                  <Route path={"/product"}>
+                    <ShowcaseItem />
+                  </Route>
+
+                  <Route path="/">
+                    <Layout>
+                      {/* <Cars firebase={firebase} />
+                          <Toys firebase={firebase} />
+                          <TVs firebase={firebase} /> */}
+                    </Layout>
+                  </Route>
+
+                </Switch>
+              )
+            }
+          </FirebaseContext.Consumer>
+        </React.Fragment>
+      </BrowserRouter>
     )
   }
 }

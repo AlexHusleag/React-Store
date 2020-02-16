@@ -1,20 +1,20 @@
-import React from 'react';
+import React, { Component } from 'react';
 import Aux from '../../HOC/Auxiliary';
 
-import Toolbar from '../Navigation/Toolbar/Header/Header';
+import Toolbar from '../../containers/Toolbar/Header/Header';
+import HomePage from '../../containers/HomePage/HomePage'
 
-import HomePage from '../Navigation/HomePage/HomePage'
+export default class Layout extends Component {
 
-
-const layout = (props) => (
-    <Aux>
-        <Toolbar/>
-        <HomePage/>
-        
-    <main>
-        {props.children}
-    </main>
-    </Aux>
-);
-
-export default layout;
+    render() {
+        return (
+            <Aux>
+                <Toolbar />
+                <HomePage />
+                {/* <main>
+                    {this.props.children}
+                </main> */}
+            </Aux>
+        );
+    }
+}

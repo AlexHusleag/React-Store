@@ -4,6 +4,8 @@ import Items from './Items/Items'
 
 import classes from './HomePage.css'
 
+// import { Route } from 'react-router-dom'
+
 export default class HomePage extends Component {
 
     render() {
